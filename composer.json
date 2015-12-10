@@ -1,0 +1,33 @@
+{
+	"name": "ublaboo/directory-register",
+	"type": "library",
+	"description": "Extension for Nette Framework: register all classes within configured directory (blacklist avalible)",
+	"keywords": ["mail", "mailing", "log", "nette", "extension"],
+	"homepage": "http://ublaboo.paveljanda.com/directory-register",
+	"license": ["MIT"],
+	"support": {
+		"issues": "https://github.com/ublaboo/directory-register/issues"
+	},
+	"authors": [
+		{
+			"name": "Pavel Janda",
+			"homepage": "http://paveljanda.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Ublaboo\\DirectoryRegister\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Ublaboo\\DirectoryRegister\\Tests\\": "tests"
+		}
+	},
+	"require": {
+		"nette/di"          : "~2.3.0"
+	},
+	"require-test": {
+		"nette/tester": "~1.6.1"
+	}
+}

@@ -26,8 +26,5 @@
 	},
 	"require": {
 		"nette/di"          : "~2.3.0"
-	},
-	"require-test": {
-		"nette/tester": "~1.6.1"
 	}
 }

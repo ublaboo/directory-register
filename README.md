@@ -36,3 +36,6 @@ See, now above configuration will be the same as writing all these lines in `con
         - App\Forms\BarFormFactory
         - App\Forms\BazFormFactory
     
+## PSR
+
+This extension is simple and fast, but only works with projects that stick to PSR-0 or PSR-4. So you have to have all automatically registered classes named same as the file is and neither of your files can contain other classes.

@@ -1,3 +1,7 @@
+[![Latest Stable Version](https://poser.pugx.org/ublaboo/directory-register/v/stable)](https://packagist.org/packages/ublaboo/directory-register)
+[![License](https://poser.pugx.org/ublaboo/directory-register/license)](https://packagist.org/packages/ublaboo/directory-register)
+[![Total Downloads](https://poser.pugx.org/ublaboo/directory-register/downloads)](https://packagist.org/packages/ublaboo/directory-register)
+
 DirectoryRegister
 =================
 

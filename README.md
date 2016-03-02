@@ -1,6 +1,7 @@
 [![Latest Stable Version](https://poser.pugx.org/ublaboo/directory-register/v/stable)](https://packagist.org/packages/ublaboo/directory-register)
 [![License](https://poser.pugx.org/ublaboo/directory-register/license)](https://packagist.org/packages/ublaboo/directory-register)
 [![Total Downloads](https://poser.pugx.org/ublaboo/directory-register/downloads)](https://packagist.org/packages/ublaboo/directory-register)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/ublaboo/help)
 
 DirectoryRegister
 =================

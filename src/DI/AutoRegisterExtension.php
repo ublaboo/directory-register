@@ -16,9 +16,16 @@ class AutoRegisterExtension extends Nette\DI\CompilerExtension
 
 	private $defaults = [
 		'dirs' => [],
-		'skip' => []
+		'interfaces' => [],
+		'skip' => [],
+		'cache' => 'Nette\Caching\Storages\FileStorage',
 	];
 
+
+	public function __construct()
+	{
+		$this->defaults['cache'] = new Nette\DI\Statement($this->defaults['cache'], ['%tempDir%/cache']);
+	}
 
 	public function loadConfiguration()
 	{
@@ -41,6 +48,30 @@ class AutoRegisterExtension extends Nette\DI\CompilerExtension
 						$builder->addDefinition($class)
 							->setClass($refletion->getName());
 					}
+				}
+			}
+		}
+
+		if(!empty($config['interfaces'])) {
+			$interfaces = array_keys($config['interfaces']);
+			$loader = new Nette\Loaders\RobotLoader;
+			$loader->setCacheStorage($config['cache']);
+			foreach ($config['interfaces'] as $dir) {
+				if (is_dir($dir)) {
+					$loader->addDirectory($dir);
+				}
+			}
+			$loader->register();
+			foreach ($loader->getIndexedClasses() as $class => $file) {
+				if (empty(array_intersect(class_implements($class), $interfaces))) {
+					continue;
+				}
+
+				$refletion = new \ReflectionClass($class);
+
+				if ($refletion->isInstantiable()) {
+					$builder->addDefinition($class)
+						->setClass($class);
 				}
 			}
 		}

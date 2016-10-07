@@ -21,7 +21,9 @@ autoRegister:
         App\Forms: %appDir%/Forms,
         App\ORM\Repository: %appDir%/ORM/Repository
     ]
-
+    interfaces: [
+        IFormFactory: %appDir%/Forms,
+    ]
     skip: [App\Forms\ContactFormFactory]
 ```
 

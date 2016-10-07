@@ -25,6 +25,7 @@
 		}
 	},
 	"require": {
-		"nette/di" : "^2.3"
+		"nette/di" : "^2.3",
+		"nette/robot-loader": "^v2.3"
 	}
 }

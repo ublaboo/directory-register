@@ -3,7 +3,7 @@
 	"type": "library",
 	"description": "Extension for Nette Framework: register all classes within configured directory (blacklist avalible)",
 	"keywords": ["mail", "mailing", "log", "nette", "extension"],
-	"homepage": "http://ublaboo.paveljanda.com/directory-register",
+	"homepage": "https://ublaboo.org/directory-register",
 	"license": ["MIT"],
 	"support": {
 		"issues": "https://github.com/ublaboo/directory-register/issues"
